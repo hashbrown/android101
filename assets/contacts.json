@@ -1,0 +1,52 @@
+[
+    {
+        "last_name": "Doe",
+        "first_name": "John",
+        "phone": "123-456-7890"
+    },
+    {
+        "last_name": "Doe",
+        "first_name": "Jane",
+        "phone": "527-274-2342"
+    },
+    {
+        "last_name": "Thomas",
+        "first_name": "Dave",
+        "phone": "552-425-1234"
+    },
+    {
+        "last_name": "Anderson",
+        "first_name": "Jen",
+        "phone": "579-267-1241"
+    },
+    {
+        "last_name": "Horace",
+        "first_name": "Susan",
+        "phone": "792-123-2523"
+    },
+    {
+        "last_name": "Tom",
+        "first_name": "Tim",
+        "phone": "432-456-2341"
+    },
+    {
+        "last_name": "Doe",
+        "first_name": "Jack",
+        "phone": "123-456-7890"
+    },
+    {
+        "last_name": "Armstrong",
+        "first_name": "Gladys",
+        "phone": "625-142-1231"
+    },
+    {
+        "last_name": "Jack",
+        "first_name": "John",
+        "phone": "726-125-1423"
+    },
+    {
+        "last_name": "Schmit",
+        "first_name": "Grace",
+        "phone": "423-123-2342"
+    }
+]
