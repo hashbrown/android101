@@ -19,7 +19,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/contact_fullname"
-        android:layout_alignBottom="@+id/contact_fullname"
-        android:layout_marginLeft="18dp" />
+        android:layout_alignBottom="@+id/contact_fullname"/>
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact_phone"
+        android:text="Call" />
 
 </RelativeLayout>
