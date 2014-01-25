@@ -1,7 +1,9 @@
 package gdg.android101.contactsapp;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.widget.TextView;
 
@@ -34,4 +36,8 @@ public class ContactActivity extends Activity {
 		return true;
 	}
 
+	private void call(Contact contact) {
+		Intent dial = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + contact.getPhone()));
+		startActivity(dial);
+	}
 }
