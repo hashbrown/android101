@@ -5,11 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.ListActivity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.View;
-import android.widget.ListView;
 
 public class ContactListActivity extends ListActivity {
 
@@ -20,22 +17,6 @@ public class ContactListActivity extends ListActivity {
 		ContactsListAdapter adapter = new ContactsListAdapter(this, 0,
 				loadContacts());
 		getListView().setAdapter(adapter);
-	}
-	
-	@Override
-	protected void onListItemClick(ListView l, View v, int position, long id) {
-		super.onListItemClick(l, v, position, id);
-		Contact contact = (Contact) getListView().getAdapter().getItem(position);
-		showContactDetails(contact);
-	}
-
-	private void showContactDetails(Contact contact) {
-		Intent detailsIntent = new Intent(this, ContactActivity.class);
-		detailsIntent.putExtra("firstName", contact.getFirstName());
-		detailsIntent.putExtra("lastName", contact.getLastName());
-		detailsIntent.putExtra("phone", contact.getPhone());
-		
-		startActivity(detailsIntent);
 	}
 
 	@Override
