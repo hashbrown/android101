@@ -7,6 +7,8 @@ import java.util.List;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.widget.ListView;
 
 public class ContactListActivity extends ListActivity {
 
@@ -18,12 +20,11 @@ public class ContactListActivity extends ListActivity {
 				loadContacts());
 		getListView().setAdapter(adapter);
 	}
-
+	
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
+	protected void onListItemClick(ListView l, View v, int position, long id) {
+		super.onListItemClick(l, v, position, id);
+		// TODO retrieve contact using position and start contact detail activity using intent
 	}
 
 	private List<Contact> loadContacts() {
